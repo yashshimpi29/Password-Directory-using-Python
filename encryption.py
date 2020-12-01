@@ -8,7 +8,7 @@ remove this script from the folder after executing'''
 
 credential={
     'key' : Fernet.generate_key().decode("utf-8"),
-    'mvp' : <-- YOUR PASSWORD -->
+    'mvp' : <--YOUR PASSWORD-->
 }
 
 #key is generated 

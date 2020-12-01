@@ -54,7 +54,7 @@ def terminal_entry():
 
         if record is None:
             u = input("Username: ")
-            p = input("Password: ")
+            p = stdiomask.getpass()
             password = encrypt(p) 
             insert_data(w,u,password)
         else:
@@ -78,7 +78,7 @@ def update_entry():
     else:
         print("Enter the Username and New Password")
         u = input("Username: ")
-        p = input("New Password: ")
+        p = stdiomask.getpass()
         password = encrypt(p)
         update_data(w,u,password)
 
