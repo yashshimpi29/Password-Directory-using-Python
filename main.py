@@ -1,6 +1,6 @@
 from sqlite_methods import insert_data, get_data, update_data, display_data
 from encrypt_decrypt import encrypt, master_password
-import stdiomask, getpass
+import stdiomask, getpass, settings
 
 def get_input():
     """ gets website name as input
@@ -16,7 +16,8 @@ def file_entry():
     """
     print("Note: Insert file in txt format")
     fname = input("Enter location of file: ")
-    if (len(fname) < 1): fname = 'Passlist.txt'
+    if (len(fname) < 1):
+        fname = settings.passlist 
     fh = open(fname)
     entry_count = 0
     w, u, p = (list() for i in range(3))

@@ -19,3 +19,7 @@ creds_file = os.path.join(
 key_file = os.path.join(
     ROOT_DIR, "config", "key.txt"
 )
+
+passlist = os.path.join(
+    ROOT_DIR, "config", "Passlist.txt"
+)
